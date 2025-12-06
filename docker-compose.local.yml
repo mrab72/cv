@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  # CV Application
+  cv:
+    build:
+      context: ./cv
+      dockerfile: Dockerfile
+    container_name: cv-app-local
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3001:3000"
+
+  # Tech Notes Application
+  tech-notes:
+    build:
+      context: ./tech-notes
+      dockerfile: Dockerfile
+    container_name: tech-notes-app-local
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+    ports:
+      - "3002:3000"

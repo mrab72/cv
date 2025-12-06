@@ -1,0 +1,18 @@
+# SSL Certificates - NEVER commit these!
+nginx/ssl/*.crt
+nginx/ssl/*.key
+nginx/ssl/*.pem
+nginx/ssl/*.cert
+
+# Keep README but ignore certificates
+!nginx/ssl/README.md
+
+# Environment files
+.env
+.env*.local
+
+# Docker volumes
+certbot/
+
+# OS files
+.DS_Store
