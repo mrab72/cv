@@ -20,7 +20,7 @@ export function Resume() {
           <a className="hover:underline" href="#story">
             Story
           </a>
-          <a className="hover:underline" href="https://notes.maryammasinan.me" target="_blank" rel="noopener noreferrer">
+          <a className="hover:underline" href="/tech-notes">
             Tech Notes
           </a>
           <a className="hover:underline" href="#contact">
@@ -308,7 +308,7 @@ export function Resume() {
       <footer className="bg-gray-900 text-white py-6 px-6 md:px-12 flex flex-col md:flex-row items-center justify-between">
         <div className="text-sm">© 2024 Maryam Abdoli. All rights reserved.</div>
         <div className="flex gap-4 mt-4 md:mt-0">
-          <a className="hover:underline" href="https://notes.maryammasinan.me" target="_blank" rel="noopener noreferrer">
+          <a className="hover:underline" href="/tech-notes">
             Tech Notes
           </a>
           <a className="hover:underline" href="https://linkedin.com/in/maryam-abdoli">
