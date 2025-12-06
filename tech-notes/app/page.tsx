@@ -34,6 +34,58 @@ export default function Home() {
         </header>
 
         <main className="space-y-12">
+          {/* Featured Sections */}
+          <section className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white border-b pb-3 border-gray-200 dark:border-gray-700">
+              Code Examples & Demos
+            </h2>
+            <div className="grid gap-4">
+              <Link
+                href="/examples/maintainable-code"
+                className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Maintainable Code Examples
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Object-oriented design patterns demonstrated through 7 practical Python examples: Elevator, Hotel, Library, Parking Lot, Rate Limiter, Task Scheduler, and Vending Machine
+                </p>
+              </Link>
+              <Link
+                href="/demos/token-bucket"
+                className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Token Bucket Visualization
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Interactive visualization of the token bucket rate limiting algorithm
+                </p>
+              </Link>
+              <Link
+                href="/demos/tokio-concurrency-visualization"
+                className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Tokio Concurrency Visualization
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Visual demonstration of Rust&apos;s Tokio async runtime and concurrency patterns
+                </p>
+              </Link>
+              <Link
+                href="/demos/tokio-diagrams"
+                className="block p-4 rounded-lg border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 hover:shadow-md transition-all duration-200"
+              >
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                  Tokio Diagrams
+                </h3>
+                <p className="text-gray-600 dark:text-gray-400">
+                  Architectural diagrams and visualizations for Tokio async concepts
+                </p>
+              </Link>
+            </div>
+          </section>
           {Object.entries(notesByCategory).map(([category, categoryNotes]) => (
             <section key={category} className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
               <h2 className="text-3xl font-bold mb-6 capitalize text-gray-900 dark:text-white border-b pb-3 border-gray-200 dark:border-gray-700">
